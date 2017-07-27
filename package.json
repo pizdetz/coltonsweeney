@@ -1,0 +1,23 @@
+{
+  "name": "coltonsweeney",
+  "version": "1.0.0",
+  "description": "expressjs and bootstrap website",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/pizdetz/coltonsweeney.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "bootstrap",
+    "html5",
+    "css3"
+  ],
+  "author": "colton sweeney",
+  "license": "ISC"
+}

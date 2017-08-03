@@ -1,4 +1,6 @@
 var express = require("express");
+var helmet = require("helmet");
+
 var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
@@ -7,6 +9,8 @@ var path = __dirname + '/views/';
 var dd = new Date().getDay();
 var mm = new Date().getMonth();
 var yyyy = new Date().getFullYear();
+
+app.use(helmet());
 
 
 router.use(function (req, res, next){

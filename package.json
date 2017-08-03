@@ -4,11 +4,15 @@
   "description": "expressjs and bootstrap website",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "\u0016https://github.com/pizdetz/coltonsweeney.git"
+  },
+  "engines": {
+    "node": "6.3.0"
   },
   "keywords": [
     "node",
@@ -16,8 +20,12 @@
     "express",
     "bootstrap",
     "html5",
-    "css3"
+    "css3",
+    "portfolio"
   ],
-  "author": "colton sweeney",
-  "license": "ISC"
+  "author": "Colton Sweeney",
+  "license": "ISC",
+  "dependencies": {
+    "helmet": "^3.8.1"
+  }
 }

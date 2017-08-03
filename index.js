@@ -6,8 +6,8 @@ var router = express.Router();
 var path = __dirname + '/views/';
 
 //set up logging variables
-var dd = new Date().getDay();
-var mm = new Date().getMonth();
+var dd = new Date().getDay() - 1;
+var mm = new Date().getMonth() + 1;
 var yyyy = new Date().getFullYear();
 
 app.use(helmet());

@@ -1,205 +1,217 @@
 <!DOCTYPE html>
 <html>
-<title>Colton Sweeney</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="css/index.css">
-<link rel="icon" href="img/profile.jpg">
-<script src="js/home.js"></script>
+
+<head>
+  <title>Colton Sweeney</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.simple-text-rotator.js"></script>
+  <link rel="stylesheet" href="css/simpletextrotator.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="img/profile.jpg">
+  <script src="js/home.js"></script>
+</head>
+
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+        title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">COLTON SWEENEY</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COLTON<span class="w3-hide-small"> SWEENEY</span></span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love programming</em></p>
-  <p>I've created this website in order to establish an online portfolio for myself. Ideally, I'd like to include any highlighted projects that I'm working on here, as well 
-    as any other materials and assets I create as a sort of showcase. I'm 19 years old and student at my local community college. I'm enrolled in an Associates of Science course 
-    for Computer Science. I currently work as a Product Marketing Intern at Progress Software. In this capacity, I create assets for our Sitefinity product, as well as creating 
-    various miscellaneous scripts.
-  </p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Colton Sweeney</b></p><br>
-      <img src="img/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="200" height="200">
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">COLTON SWEENEY</a>
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>If you would like to know more, please feel free to scroll to my Contact section to find information on how to 
-        get in touch with me. I offer a wide breadth of services, from small batch scripting to full application development. 
-        I have 5+ years of experience with software development and am constantly challenging myself to learn more languages and 
-        frameworks. I'm sure that, whatever your needs be, I can come up with a solution to them.
-      </p>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Programming</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">10+</span><br>
-    Public Repositories
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">5</span><br>
-    Clients Served
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">30+</span><br>
-    Scripts Created
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">5+</span><br>
-    Websites Created
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my favorite projects<br> Clicking on the images opens a GitHub tab</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img/alexa-skill.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Alexa Skills Kit">
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="rotate">COLTON SWEENEY, PROGRAMMER, WEB DESIGNER</span></span>
     </div>
-
-    <div class="w3-col m3">
-      <img src="img/django.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Django Code">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/portfolio_website.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Website Source Code">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/index.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="node.js Scripting">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
-</div>
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Raleigh, NC, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (919)885-6327<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: colton.sweeney@gmail.com<br>
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center tlt">ABOUT ME</h3>
+    <p class="w3-center"><em>I love programming</em></p>
+    <p>I've created this website in order to establish an online portfolio for myself. Ideally, I'd like to include any highlighted
+      projects that I'm working on here, as well as any other materials and assets I create as a sort of showcase. I'm 19
+      years old and student at my local community college. I'm enrolled in an Associates of Science course for Computer Science.
+      I currently work as a Product Marketing Intern at Progress Software. In this capacity, I create assets for our Sitefinity
+      product, as well as creating various miscellaneous scripts.
+    </p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Colton Sweeney</b></p><br>
+        <img src="img/profile.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="200" height="200">
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>If you would like to know more, please feel free to scroll to my Contact section to find information on how to get
+          in touch with me. I offer a wide breadth of services, from small batch scripting to full application development.
+          I have 5+ years of experience with software development and am constantly challenging myself to learn more languages
+          and frameworks. I'm sure that, whatever your needs be, I can come up with a solution to them.
+        </p>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Programming</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">10+</span><br> Public Repositories
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">5</span><br> Clients Served
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">30+</span><br> Scripts Created
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">5+</span><br> Websites Created
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY WORK</h3>
+    <p class="w3-center"><em>Here are some of my favorite projects<br> Clicking on the images opens a GitHub tab</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="img/alexa-skill.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Alexa Skills Kit">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img/django.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Django Code">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img/portfolio_website.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Website Source Code">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="img/index.png" style="width:100px;height:100px;" onclick="onClick(this)" class="w3-hover-opacity" alt="node.js Scripting">
+      </div>
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE I WORK</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <!-- Add Google Maps -->
+        <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Raleigh, NC, US<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (919)885-6327<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: colton.sweeney@gmail.com<br>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/coltonsdev"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/colton-sweeney/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  </div>
-</footer>
- 
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ7Jt-0RqgcDha3PBnSMucsN75OkkbWIY&callback=myMap"></script>
-<!--
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href=""><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/coltonsdev"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/colton-sweeney/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+  </footer>
+
+  <!-- Add Google Maps -->
+  <script>
+    $(".rotate").textrotator({
+      animation: "fade",
+      seperator: ",",
+      speed: 3000
+    })
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ7Jt-0RqgcDha3PBnSMucsN75OkkbWIY&callback=myMap"></script>
+  <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 </body>
+
 </html>

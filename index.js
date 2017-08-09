@@ -13,22 +13,22 @@ var yyyy = new Date().getFullYear();
 app.use(helmet());
 
 
-router.use(function (req, res, next){
+router.use((req, res, next) =>{
   var date = mm + "/" + dd + "/" + yyyy;
   var time = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
   console.log("/" + req.method + " " + date + " " + time);
   next();
 });
 
-router.get("/", function(req, res) {
+router.get("/", (req, res) => {
   res.sendFile(path + "index.html");
 });
 
-router.get("/about", function(req, res){
-  res.sendFile(path + "about.html");
+router.get("/portfolio", (req, res) => {
+  res.sendFile(path + "portfolio.html");
 });
 
-router.get("/contact", function(req, res){
+router.get("/contact", (req, res) => {
   res.sendFile(path + "contact.html");
 });
 
@@ -36,10 +36,10 @@ app.use("/", router);
 
 app.use(express.static('lib'));
 
-app.use("*", function(req, res){
+app.use("*", (req, res) => {
   res.sendFile(path + "404.html");
 });
 
-app.listen(3000, function(){
+app.listen(3000, () => {
   console.log("app running at localhost:3000 - press ctrl+c to quit...");
 })

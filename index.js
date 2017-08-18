@@ -13,7 +13,7 @@ var yyyy = new Date().getFullYear();
 app.use(helmet());
 
 
-router.use((req, res, next) =>{
+router.use((req, res, next) => {
   var date = mm + "/" + dd + "/" + yyyy;
   var time = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
   console.log("/" + req.method + " " + date + " " + time);

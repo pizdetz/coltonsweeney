@@ -11,6 +11,7 @@ node install express
 This Express.js app requires the following dependencies
 
 - helmet v3.8.1
+- Bootstrap 4.0.0 (js & css static files)
 
 # Future Plans
 
